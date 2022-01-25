@@ -5,7 +5,7 @@ def cube_tower(cubes, n, cur_cube, prev_cube, prev_top_face):
         answers = [0 for x in range(6)]
         max_answer = 0
         for i in range(6):
-            answers[i] = cube_tower(cubes, n, cur_cube - 1, cur_cube, cubes[n - 1][i]) 
+            answers[i] = cube_tower(cubes, n, cur_cube - 1, cur_cube, cubes[n - 1][i]) + 1
             if answers[i] > answers[max_answer]:
                 max_answer = i
         return answers[max_answer]
