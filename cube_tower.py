@@ -8,6 +8,7 @@ def cube_tower(cubes, n, cur_cube, prev_cube, prev_top_face):
             answers[i] = cube_tower(cubes, n, cur_cube - 1, cur_cube, cubes[n - 1][i]) + 1
             if answers[i] > answers[max_answer]:
                 max_answer = i
+        print(answers)
         return answers[max_answer]
     elif cur_cube == 0:
         if prev_top_face in cubes[cur_cube]:

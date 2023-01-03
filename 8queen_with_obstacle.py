@@ -87,9 +87,9 @@ def solveNQ(n):
     result.clear()
     board = [[0 for j in range(n)]
              for i in range(n)]
-    board[3][0] = 2
-    board[3][3] = 2
-    board[6][2] = 2
+    # board[3][0] = 2
+    # board[3][3] = 2
+    board[7][7] = 2
     solveNQUtil(board, 0, n)
     return result
 

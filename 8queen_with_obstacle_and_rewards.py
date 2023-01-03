@@ -128,7 +128,7 @@ def solveNQ(n, x):
     return result
 
 n = 8
-res = solveNQ(n, 300)
+res = solveNQ(n, 1000)
 for i in range(len(res)):
     for j in range(8):
         for k in range(8):
